@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import GameplayKit
 
 struct Concentration {
     
@@ -59,6 +59,8 @@ struct Concentration {
             let card = Card()
             cards += [card, card]
             
+            // import GameplayKit and write this line to shuffle cards:
+            cards = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: cards) as! [Card]
         }
     }
     

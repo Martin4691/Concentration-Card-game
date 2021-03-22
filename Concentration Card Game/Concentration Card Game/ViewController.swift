@@ -69,6 +69,7 @@ class ViewController: UIViewController {
         return emoji[card] ?? "?"
         
     }
+    
 }
 
 extension Int {
